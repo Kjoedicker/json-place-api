@@ -14,7 +14,10 @@ app.use(albumRoute);
 
 // 404 route
 app.get('*', function(req, res) {
-  res.status(404).json({status: 'Failure', error: 'Endpoint not found!'});
+  res.status(404).json({
+    status: 'Failure',
+    error: 'API is only accessible on /albums/:id',
+  });
 });
 
 module.exports = {app};
