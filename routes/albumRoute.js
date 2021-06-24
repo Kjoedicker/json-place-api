@@ -24,6 +24,6 @@ router.get('/albums/:id([0-9]+)?', async (req, res) =>{
   } catch (err) {
     res.status(400).json({status: 'Failure', error: err.message});
   }
-}, errorHandler);
+});
 
 module.exports= router;
