@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const errorHandler = require('./src/middleware/errorHandler.js');
+const errorHandler = require('./middleware/errorHandler.js');
 
 // local env
 require('dotenv').config('.env' );
@@ -10,7 +10,7 @@ require('dotenv').config('.env' );
 app.use(express.json({extended: false}));
 
 // ROUTES
-const albumRoute = require('./src/routes/albumRoute.js');
+const albumRoute = require('./routes/albumRoute.js');
 
 app.use(albumRoute);
 

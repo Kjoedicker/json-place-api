@@ -2,7 +2,7 @@
   "name": "think-simple-coding-challenge",
   "version": "1.0.0",
   "description": "Coding challenge for Think Simple",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
